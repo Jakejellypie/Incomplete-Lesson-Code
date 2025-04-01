@@ -1,6 +1,6 @@
 //importing express to link the frontend with the clients that log in using http module
 const expressImport = require("express");
-//loading the http module to let people connect to this test server (well just me rn )
+//loading the http module to let people connect to this test server
 const httpImport = require("http");
 /*loading in socket.io module to manage communication b/w websockets, 
  we will add this on top of the server created with http and express*/
@@ -25,7 +25,7 @@ io.on('connection', (socket) => {
 
     //creating a listener for message by the front-end to the backend server (test-server.js)
     socket.on('general', ({username, message})=>{
-        console.log("Server ge frontEndMsgReceived:", {username, message});
+        console.log("Server recieved:", {username, message});
         socket.broadcast.emit('general', {username, message});
     });
     

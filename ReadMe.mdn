@@ -2,6 +2,8 @@ This is the Incomplete file that the students will code in.
 In case there's too many issues to bug, you can download the completed Lesson version from here:
 https://github.com/blekmus/js-group-lesson
 
+Link to backend - "https://js-group-demo.onrender.com"
+
 Step 1) Download the live-lesson template from the public GitHub Repo.
 npm init -y it to get package.json
 

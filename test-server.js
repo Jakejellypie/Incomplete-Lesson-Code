@@ -2,7 +2,6 @@
 const expressImport = require("express");
 //loading the http module to let people connect to this test server (well just me rn )
 const httpImport = require("http");
-
 /*loading in socket.io module to manage communication b/w websockets, 
  we will add this on top of the server created with http and express*/
  const socketIO = require("socket.io");
@@ -25,9 +24,9 @@ io.on('connection', (socket) => {
     console.log('A user has connected');
 
     //creating a listener for message by the front-end to the backend server (test-server.js)
-    socket.on('frontEndMsgReceived', ({username, message})=>{
-        console.log("Server received frontEndMsgReceived:", {username, message});
-        socket.broadcast.emit('backEndMsgSent', {username, message});
+    socket.on('general', ({username, message})=>{
+        console.log("Server ge frontEndMsgReceived:", {username, message});
+        socket.broadcast.emit('general', {username, message});
     });
     
     //attaching the unique user (socket) to a disconnect check
@@ -36,7 +35,7 @@ io.on('connection', (socket) => {
     });
 });
 
-const PORT = 3000
+const PORT = 3000;
 server.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });

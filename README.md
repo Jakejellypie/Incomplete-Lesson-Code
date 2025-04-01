@@ -27,7 +27,7 @@ npm install socket.io
 ```
 
 ### Step 3
-Check if installations happened properly by checking inside of `package.json`.
+Check if installations happened properly by checking inside of `package.json`. Then run the website and see how it looks.
 
 ### Step 4
 In their test-server.js, explaining the imports and what they are going to be used for in this lesson.

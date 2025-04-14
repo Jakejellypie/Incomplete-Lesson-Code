@@ -18,3 +18,22 @@ export function OthersMsgUI(newMessage, msgContainer){
             msgContainer.scrollTop = msgContainer.scrollHeight;
     }, 100);
 };
+
+
+export function addMessage({username, message}, myOwnMsgBool){
+    const newListItem = document.createElement("li");
+    const displayMsg = `@${username}<br>${message}`;
+    newListItem.innerHTML = displayMsg;
+
+    const msgDisplay = document.querySelector(".msgDisplay ul");
+    const msgContainer = document.querySelector(".msgDisplay");
+
+    msgDisplay.prepend(newListItem);
+
+    if(myOwnMsgBool){
+        yourOwnMsgUI(newListItem, msgContainer);
+    }
+    else{
+        OthersMsgUI(newListItem, msgContainer);
+    }
+}

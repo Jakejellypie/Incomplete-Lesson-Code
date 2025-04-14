@@ -4,11 +4,6 @@ const toBeUpdatedUserName = document.getElementById("username");
 const toBeUpdatedDesc = document.getElementById("description");
 //creating a var for the input obtained from the textfield with id input
 let userInput = document.getElementById("input") 
-//creating a var for the message display area
-const msgDisplay = document.querySelector(".msgDisplay ul");
-
-//creating a var for msgContainer (the parent div to the ul)
-const msgContainer = document.querySelector(".msgDisplay");
 
 
 //creating a username, whatever you want it to be

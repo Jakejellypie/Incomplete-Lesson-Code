@@ -17,7 +17,12 @@ app.use(expressImport.static('public'));
 
 //putting socket.io ontop of the server to manage communication between the sockets (each private connection) to enable real time connections
 //by creating an instance
-const io = socketIO(server);
+const io = socketIO(server, {cors:{
+        origin:"*",
+        methods: ["GET", "POST"],
+        credentials: false
+    }
+});
 
 //using the inbuilt socketIO methods to check if user(s) have successfully connected
 io.on('connection', (socket) => {

@@ -8,6 +8,17 @@ In case there's too many issues to debug, you can download the completed Lesson 
 https://js-group-demo.onrender.com
 ```
 
+### Link to socket.io mini library
+```
+https://cdn.socket.io/4.7.2/socket.io.min.js
+```
+
+### Link to socket.io mini library
+```
+https://js-group-demo.vercel.app/
+```
+
+
 ## Lesson steps
 
 ### Step 1

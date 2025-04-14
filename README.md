@@ -13,7 +13,7 @@ https://js-group-demo.onrender.com
 https://cdn.socket.io/4.7.2/socket.io.min.js
 ```
 
-### Link to socket.io mini library
+### Link to actual Demo
 ```
 https://js-group-demo.vercel.app/
 ```
